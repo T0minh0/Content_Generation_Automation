@@ -15,11 +15,11 @@ from src.utils.init_path import init_path
 def main(args):
     #torch.backends.cudnn.enabled = False
     foto = input("Digite novamente o nome da persona:\n").strip()
-    caminho_foto = "C:\\Users\\boris\\AI\\SAD\\SadTalker\\Source\\Foto\\" + foto + ".jpg"
+    caminho_foto = "-------------------------------------------" + foto + ".jpg"
     audio = input("Digite novamente o nome da classe:\n").strip()
-    caminho_audio = "C:\\Users\\boris\\AI\\SAD\\SadTalker\\Source\\audio\\" + audio + ".wav"
+    caminho_audio = "-----------------------------------------------" + audio + ".wav"
     Resultado_final = input("Como deseja chamar essa aula:")
-    Caminho_saida = "C:\\Users\\boris\\AI\\SAD\\SadTalker\\aulas\\" + Resultado_final
+    Caminho_saida = "-----------------------------------------------" + Resultado_final
     pic_path = caminho_foto
     audio_path = caminho_audio
     save_dir = Caminho_saida
