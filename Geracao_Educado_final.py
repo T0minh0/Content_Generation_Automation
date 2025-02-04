@@ -24,7 +24,7 @@ def gerar_imagem(pipe, descricao, output_path):
 def main():
     # Inicialização do pipeline
     pipe = FluxPipeline.from_pretrained(
-        "C:\\Users\\boris\\AI\\Flux\\codes\\flix1schnell", 
+        "----------------------------------------------------------", 
         torch_dtype=torch.bfloat16
     )
     pipe.enable_sequential_cpu_offload()
@@ -37,7 +37,7 @@ def main():
             # Solicitar entrada do usuário
             descricao = input("Digite as características da persona que deseja criar com o nome fornecido:\n")
             arquivo = input("Digite o nome do arquivo de saída (sem extensão):\n").strip()
-            arquivo = "C:\\Users\\boris\\AI\\SAD\\SadTalker\\Source\\Foto\\" + arquivo + ".jpg"
+            arquivo = "------------------------------------------------------" + arquivo + ".jpg"
 
             # Caminho absoluto para o arquivo gerado
             output_dir = os.path.abspath(".")
