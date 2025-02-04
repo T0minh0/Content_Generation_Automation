@@ -7,7 +7,7 @@ def main():
 
     # Solicita entrada do usuário
     path = input("Digite o nome do curso:\n").strip()
-    path = "C:\\Users\\boris\\AI\\SAD\\SadTalker\\Source\\audio\\" + path + ".wav"
+    path = "---------------" + path + ".wav"
 
     texto = input("Digite o roteiro:\n").strip()
 
@@ -15,7 +15,7 @@ def main():
     tts.tts_to_file(
         text=texto,
         file_path=path,
-        speaker_wav="C:\\Users\\boris\\AI\\Coqui\\Origens\\base_voz_3h.wav",
+        speaker_wav="----------------------",
         language="pt",
         split_sentences=True
     )
